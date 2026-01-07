@@ -37,7 +37,7 @@ ruff-imports = "ruff check --select I --fix"
 black = "black ."
 test = "pytest test"
 
-format = ["black", "ruff-imports", "ruff"]
+format = ["ruff-imports", "ruff", "black"]
 
 build = "python -m build"
 _publish = "twine upload dist/*"
